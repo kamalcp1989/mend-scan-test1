@@ -12,6 +12,9 @@
     <packaging>jar</packaging>
     <name>mend-repo-3</name>
     <description>mend-repo-3 log factory</description>
+	<properties>
+		<jaxb.version>4.0.2</jaxb.version>
+	</properties>
 
 	<dependencies>
         <dependency>
@@ -33,6 +36,11 @@
             <artifactId>commons-collections4</artifactId>
             <version>4.4</version>
         </dependency>
+		<dependency>
+				<groupId>org.glassfish.jaxb</groupId>
+				<artifactId>jaxb-runtime</artifactId>
+				<version>${jaxb.version}</version>
+			</dependency>
         <dependency>
 			  <groupId>org.apache.struts</groupId>
 			  <artifactId>struts2-core</artifactId>
